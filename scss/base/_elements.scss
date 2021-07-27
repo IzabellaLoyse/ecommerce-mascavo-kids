@@ -40,3 +40,19 @@ html {
    height: auto;
    max-width: none;
  }
+
+
+ body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $global-font-size;
+  line-height: $global-line-height;
+ }
+
+
+// input::placeholder {}
+
+// input::-webkit-input-placeholder {}
+
+// input::-moz-placeholder {}
+
+// input:-ms-input-placeholder {}
