@@ -1,0 +1,42 @@
+/*=============================================================================
+  #ELEMENTS
+ =============================================================================*/
+
+// @see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+// @see https://www.nicchan.me/blog/tips-for-focus-styles/#consider-adding-a-little-bit-of-breathing-room
+
+html {
+  box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline-offset: 0.25rem;
+}
+
+
+// @see https://www.zachleat.com/web/fluid-images/
+ img {
+   max-width: 100%;
+ }
+
+
+ img[width] {
+  width: auto;
+ } /*  Defer to max-width */
+
+
+ img[width][height] {
+  height: auto;
+ } /* Preserve aspect ratio */
+
+
+ /* Let SVG scale without boundaries */
+ img[src$=".svg"] {
+   width: 100%;
+   height: auto;
+   max-width: none;
+ }
