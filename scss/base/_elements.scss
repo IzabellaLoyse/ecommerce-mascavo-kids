@@ -19,40 +19,56 @@ html {
 
 
 // @see https://www.zachleat.com/web/fluid-images/
- img {
-   max-width: 100%;
- }
+img {
+  max-width: 100%;
+}
 
 
- img[width] {
+img[width] {
   width: auto;
- } /*  Defer to max-width */
+} /*  Defer to max-width */
 
 
- img[width][height] {
+img[width][height] {
   height: auto;
- } /* Preserve aspect ratio */
+} /* Preserve aspect ratio */
 
 
- /* Let SVG scale without boundaries */
- img[src$=".svg"] {
-   width: 100%;
-   height: auto;
-   max-width: none;
- }
+/* Let SVG scale without boundaries */
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
 
 
- body {
-  font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
   font-size: $global-font-size;
   line-height: $global-line-height;
- }
+}
 
 
-// input::placeholder {}
+li {
+  list-style: none;
+}
 
-// input::-webkit-input-placeholder {}
 
-// input::-moz-placeholder {}
+input::placeholder {
+  color: map-get($colors, "placeholder-color");
+}
 
-// input:-ms-input-placeholder {}
+
+input::-webkit-input-placeholder {
+  color: map-get($colors, "placeholder-color");
+}
+
+
+input::-moz-placeholder {
+  color: map-get($colors, "placeholder-color");
+}
+
+
+input:-ms-input-placeholder {
+  color: map-get($colors, "placeholder-color");
+}
