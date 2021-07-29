@@ -1,0 +1,70 @@
+/*=============================================================================
+  #DROPDOWN
+ =============================================================================*/
+ 
+ /* Menu dropdown do cabeçalho de navegação */
+
+$component-name: "c-dropdown";
+
+.#{$component-name} {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+
+.#{$component-name}__item {
+  color: map-get($colors, "text-color");
+  margin: 0 rem(10);
+  position: relative;
+
+  &:hover {
+    .#{$component-name}__submenu {
+      opacity: 1;
+      transform: rotateX(0) translateX(-50%);
+      transition-timing-function: ease-out;
+    }
+  }
+}
+
+
+.#{$component-name}__link {
+  color: map-get($colors, "text-color");
+  font-weight: map-get($font-weight, "regular");
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: rem(15);
+}
+
+
+.#{$component-name}__submenu {
+  background-color: map-get($colors, "base-color");
+  opacity: 0.25;
+  margin: 0;
+  padding: rem(15);
+  width: rem(200);
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 10px);
+  transform: translateX(-50%) rotateX(-90deg);
+  transition: all $transition-duration-fast 125ms ease-in;
+  transform-origin: top center;
+}
+
+
+.#{$component-name}__submenu-item {
+  &:not(:last-child) {
+    margin-bottom: rem(10);
+  }
+}
+
+
+.#{$component-name}__submenu-link {
+  text-decoration: none;
+  color: map-get($colors, "text-color");
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
