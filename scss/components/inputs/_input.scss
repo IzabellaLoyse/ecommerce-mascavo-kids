@@ -1,0 +1,19 @@
+/*=============================================================================
+  #INPUTS
+ =============================================================================*/
+
+/* 
+* Componente dos inputs
+* Estilo dos inputs da página 
+*/
+
+$component-name: "c-input";
+
+
+.#{$component-name}-search {
+  border: 1px solid map-get($colors , "border-color" );
+  font-weight: map-get($font-weight, "italic");
+  font-style: italic;
+  font-size: rem(10);
+  text-transform: uppercase;
+}

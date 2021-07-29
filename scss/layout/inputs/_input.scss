@@ -1,0 +1,18 @@
+/*=============================================================================
+  #INPUTS
+ =============================================================================*/
+
+/* 
+* Layout dos inputs
+* Estrutura dos inputs da página 
+*/
+
+$layout-name: "input";
+
+.l-search__#{$layout-name} {
+  position: relative;
+  max-width: 100%;
+  width: rem(506);
+  height: $global-height;
+  padding: rem(15);
+}
