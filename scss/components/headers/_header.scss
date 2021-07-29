@@ -1,0 +1,19 @@
+/*=============================================================================
+  #HEADER
+ =============================================================================*/
+
+ /* Cabeçalho de informações da página */
+
+  $component-name: "c-headline";
+
+ .#{$component-name} {
+   color: map-get($colors ,"primary-dark-color" );
+   font-size: rem(32);
+   letter-spacing: 0.08em;
+   text-decoration: none;
+ }
+
+
+ .#{$component-name}__name {
+  color: map-get($colors ,"secondary-color" );
+ }

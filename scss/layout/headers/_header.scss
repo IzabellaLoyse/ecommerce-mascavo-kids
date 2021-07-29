@@ -1,0 +1,41 @@
+/*=============================================================================
+  #HEADER
+ =============================================================================*/
+
+.l-header {
+  width: 100%;
+  display: flex;
+  margin-top: rem(43);
+}
+
+
+
+
+
+/*=============================================================================
+  #HEADER-MENU
+ =============================================================================*/
+
+ /* Cabeçalho de navegação da página */
+
+$layout-name: "l-header-menu";
+
+.#{$layout-name} {
+  width: 100%;
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    border: 1px solid map-get($colors, "border-color");
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+
+.#{$layout-name}__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: rem(12);
+}
