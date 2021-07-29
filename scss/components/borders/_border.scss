@@ -1,0 +1,19 @@
+/*=============================================================================
+  #BORDER 
+ =============================================================================*/
+
+ /* Bordas do menu de navegação da página */
+
+ $component-name: "c-border";
+
+
+.#{$component-name} {
+  border-bottom: 3px solid map-get($colors , "primary-light-color");
+}
+
+
+.#{$component-name}--state {
+  border-bottom: 3px solid map-get($colors, "secondary-dark-color" );
+}
+
+

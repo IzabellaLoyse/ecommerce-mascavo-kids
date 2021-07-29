@@ -1,0 +1,17 @@
+/*=============================================================================
+  #LINKS
+ =============================================================================*/
+
+/* 
+* Componente dos links
+* Estilo dos links da página 
+*/
+
+$component-name: "c-link";
+
+.#{$component-name}-login {
+  color: map-get($colors, "text-color");
+  font-weight: map-get($font-weight, "medium");
+  text-transform: uppercase;
+  font-size: rem(14);
+}

@@ -1,0 +1,38 @@
+/*=============================================================================
+  #BUTTONS
+ =============================================================================*/
+
+/* 
+* Layout dos botões
+* Estrutura de botões da página 
+*/
+
+$layout-name: "button";
+
+.l-search__#{$layout-name} {
+  height: $global-height;
+  width: rem(51);
+  position: absolute;
+  right: 360px;
+}
+
+
+.l-search__#{$layout-name} .icon {
+  height: rem(20);
+  width: rem(20);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

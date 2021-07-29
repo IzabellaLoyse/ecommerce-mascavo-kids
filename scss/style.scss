@@ -12,6 +12,7 @@
  /*=============================================================================
   #VENDOR
  =============================================================================*/
+ 
   @import "vendor/normalize";
 
 
@@ -20,6 +21,7 @@
  /*=============================================================================
   #BASE
  =============================================================================*/
+
   @import "base/elements";
   @import "base/a11y";
 
@@ -29,9 +31,15 @@
  /*=============================================================================
   #LAYOUT
  =============================================================================*/
+
   @import "layout/config/layout";
   @import "layout/config/container";
-  @import "layout/header/header";
+  @import "layout/headers/header";
+  @import "layout/navs/navbar";
+  @import "layout/inputs/input";
+  @import "layout/buttons/button";
+  @import "layout/links/link";
+
 
 
 
@@ -39,7 +47,11 @@
   #COMPONENTS
  =============================================================================*/
 
-  @import "components/header/header";
+  @import "components/headers/header";
+  @import "components/inputs/input";
+  @import "components/buttons/button";
+  @import "components/navs/dropdown";
+  @import "components/links/link";
 
 
 

@@ -1,0 +1,16 @@
+/*=============================================================================
+  #BUTTONS
+ =============================================================================*/
+
+/* 
+* Componentes dos botões
+* Estilos de botões da página 
+*/
+
+$component-name: "c-button";
+
+.#{$component-name}-search {
+  border: 1px solid map-get($colors, "border-color");
+  background-color: map-get($colors, "main-color");
+  cursor: pointer;
+}
