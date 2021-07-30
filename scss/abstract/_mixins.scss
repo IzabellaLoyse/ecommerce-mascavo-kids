@@ -1,0 +1,15 @@
+/*=============================================================================
+  #MIXINS
+ =============================================================================*/
+
+@mixin text-format($letter, $transform) {
+  letter-spacing: $letter;
+  text-transform: $transform;
+}
+
+
+@mixin flex($align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
