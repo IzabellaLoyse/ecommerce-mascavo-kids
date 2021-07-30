@@ -23,4 +23,5 @@ $layout-name: "l-navbar";
 
 .#{$layout-name}__search {
   margin-left: rem(16);
+  position: relative;
 }
