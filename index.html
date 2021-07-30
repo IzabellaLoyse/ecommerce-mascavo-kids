@@ -10,11 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Mascavo Kids</title>
   </head>
+
+
+
 
 
   <body>
@@ -22,14 +28,14 @@
     <header class="l-header l-container">
       <h1>
         <a href="#" class="c-headline">
-          Mascavo <span class="c-headline__name">Kids</span></a>
+          Mascavo <span class="c-headline__name">Kids</span>
+          </a>
       </h1>
-
 
       <nav class="l-navbar" aria-label="Cabeçalho de informações">
 
         <section class="l-navbar__menu">
-          <div class="l-navbar__search">
+          <div class="l-navbar__search" role="search">
             <label for="search" class="sr-only">Campo de pesquisa</label>
             <input
               type="text"
@@ -87,11 +93,140 @@
 
 
 
-    
-    <main></main>
 
-    <footer></footer>
 
+    <main>
+
+      <section class="l-cards-container l-container">
+        <h2 class="c-cards-container__title">Mais vendidos</h2>
+
+        <div class="l-cards">
+
+          <article class="l-card">
+            <div class="l-card__image">
+              <img src="/img/produto.png" alt="" />
+            </div>
+
+            <div class="l-card__content">
+              <h2 class="c-card__content-title">Blusa Brandili azul menino</h2>
+              <p class="c-card__content-text">R$ 49,99</p>
+              <button class="c-button l-button--small">Comprar</button>
+            </div>
+          </article>
+
+
+          <article class="l-card">
+            <div class="l-card__image">
+              <img src="/img/produto.png" alt="" />
+            </div>
+
+            <div class="l-card__content">
+              <h2 class="c-card__content-title">Blusa Brandili azul menino</h2>
+              <p class="c-card__content-text">R$ 49,99</p>
+              <button class="c-button l-button--small">Comprar</button>
+            </div>
+          </article>
+
+
+          <article class="l-card">
+            <div class="l-card__image">
+              <img src="/img/produto.png" alt="" />
+            </div>
+
+            <div class="l-card__content">
+              <h2 class="c-card__content-title">Blusa Brandili azul menino</h2>
+              <p class="c-card__content-text">R$ 49,99</p>
+              <button class="c-button l-button--small">Comprar</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+
+
+
+      <section class="l-cards-container l-container">
+        <h2 class="c-cards-container__title">Em destaque</h2>
+
+        <div class="l-cards">
+          <article class="l-card">
+            <div class="l-card__image">
+              <img src="/img/produto.png" alt="" />
+            </div>
+
+            <div class="l-card__content">
+              <h2 class="c-card__content-title">Blusa Brandili azul menino</h2>
+              <p class="c-card__content-text">R$ 49,99</p>
+              <button class="c-button l-button--small">Comprar</button>
+            </div>
+          </article>
+
+
+          <article class="l-card">
+            <div class="l-card__image">
+              <img src="/img/produto.png" alt="" />
+            </div>
+
+            <div class="l-card__content">
+              <h2 class="c-card__content-title">Blusa Brandili azul menino</h2>
+              <p class="c-card__content-text">R$ 49,99</p>
+              <button class="c-button l-button--small">Comprar</button>
+            </div>
+          </article>
+
+
+          <article class="l-card">
+            <div class="l-card__image">
+              <img src="/img/produto.png" alt="" />
+            </div>
+
+            <div class="l-card__content">
+              <h2 class="c-card__content-title">Blusa Brandili azul menino</h2>
+              <p class="c-card__content-text">R$ 49,99</p>
+              <button class="c-button l-button--small">Comprar</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+
+
+
+
+    <footer class="l-footer l-container">
+
+      <nav class="l-footer__navigation" aria-label="Navegação do rodapé">
+
+        <ul class="l-footer__list">
+          <li class="l-footer__list-item">
+            <a href="#" class="c-footer__list-link">Quem somos ?</a>
+          </li>
+
+          <li class="l-footer__list-item">
+            <a href="#" class="c-footer__list-link">Política de privacidade</a>
+          </li>
+
+          <li class="l-footer__list-item">
+            <a href="#" class="c-footer__list-link">Saiba mais</a>
+          </li>
+          
+          <li class="l-footer__list-item">
+            <a href="#" class="c-footer__list-link">Trabalhe conosco</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="l-footer__content">
+        <p class="c-footer__description">
+          mascavo kids - cnpj: 00.000.000.0000/00 - rua das nuvens,00 - bairro
+          dos sonhos
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
