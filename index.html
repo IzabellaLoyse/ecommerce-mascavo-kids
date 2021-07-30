@@ -19,21 +19,15 @@
     <title>Mascavo Kids</title>
   </head>
 
-
-
-
-
   <body>
-
     <header class="l-header l-container">
       <h1>
         <a href="#" class="c-headline">
           Mascavo <span class="c-headline__name">Kids</span>
-          </a>
+        </a>
       </h1>
 
       <nav class="l-navbar" aria-label="Cabeçalho de informações">
-
         <section class="l-navbar__menu">
           <div class="l-navbar__search" role="search">
             <label for="search" class="sr-only">Campo de pesquisa</label>
@@ -59,16 +53,11 @@
       </nav>
     </header>
 
-
-
-
-
     <header class="l-header-menu l-container">
-
       <nav
         class="l-header-menu__navigation"
-        aria-label="Cabeçalho de navegação">
-
+        aria-label="Cabeçalho de navegação"
+      >
         <ul class="c-dropdown">
           <li class="c-dropdown__item">
             <a href="index.html" class="c-dropdown__link c-border">Home</a>
@@ -91,17 +80,32 @@
       </nav>
     </header>
 
-
-
-
-
     <main>
+      
+      <div class="swiper-container mySwiper l-layout-fluid">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/img/banner.png" alt="Banner" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/banner.png" alt="Banner" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/banner.png" alt="Banner" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/banner.png" alt="Banner" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
 
       <section class="l-cards-container l-container">
         <h2 class="c-cards-container__title">Mais vendidos</h2>
 
         <div class="l-cards">
-
           <article class="l-card">
             <div class="l-card__image">
               <img src="/img/produto.png" alt="" />
@@ -114,7 +118,6 @@
             </div>
           </article>
 
-
           <article class="l-card">
             <div class="l-card__image">
               <img src="/img/produto.png" alt="" />
@@ -126,7 +129,6 @@
               <button class="c-button l-button--small">Comprar</button>
             </div>
           </article>
-
 
           <article class="l-card">
             <div class="l-card__image">
@@ -141,10 +143,6 @@
           </article>
         </div>
       </section>
-
-
-
-
 
       <section class="l-cards-container l-container">
         <h2 class="c-cards-container__title">Em destaque</h2>
@@ -162,7 +160,6 @@
             </div>
           </article>
 
-
           <article class="l-card">
             <div class="l-card__image">
               <img src="/img/produto.png" alt="" />
@@ -174,7 +171,6 @@
               <button class="c-button l-button--small">Comprar</button>
             </div>
           </article>
-
 
           <article class="l-card">
             <div class="l-card__image">
@@ -191,14 +187,8 @@
       </section>
     </main>
 
-
-
-
-
     <footer class="l-footer l-container">
-
       <nav class="l-footer__navigation" aria-label="Navegação do rodapé">
-
         <ul class="l-footer__list">
           <li class="l-footer__list-item">
             <a href="#" class="c-footer__list-link">Quem somos ?</a>
@@ -211,7 +201,7 @@
           <li class="l-footer__list-item">
             <a href="#" class="c-footer__list-link">Saiba mais</a>
           </li>
-          
+
           <li class="l-footer__list-item">
             <a href="#" class="c-footer__list-link">Trabalhe conosco</a>
           </li>
@@ -227,6 +217,7 @@
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

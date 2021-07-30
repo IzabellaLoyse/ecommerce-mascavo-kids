@@ -17,6 +17,7 @@ $component-name: "c-dropdown";
   color: map-get($colors, "text-color");
   margin: 0 rem(10);
   position: relative;
+  z-index: 999;
 
   &:hover {
     .#{$component-name}__submenu {

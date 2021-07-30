@@ -1,0 +1,26 @@
+/*=============================================================================
+  #SWIPER
+ =============================================================================*/
+
+/* Biblioteca de carrossel */
+
+.swiper-container {
+  width: 100%;
+  height: rem(540);
+  padding-top: rem(69);
+}
+
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
