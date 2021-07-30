@@ -1,0 +1,41 @@
+/*=============================================================================
+  #FOOTER
+ =============================================================================*/
+
+/* 
+* Layout do footer da página
+* Estrutura do footer da página 
+*/
+
+$layout-footer: "l-footer";
+
+.#{$layout-footer} {
+  padding-top: rem(50);
+  padding-bottom: rem(60);
+}
+
+
+.#{$layout-footer}__navigation {
+  &::before,
+  &::after {
+    @extend %u-global-border-style;
+    content: "";
+    display: block;
+  }
+}
+
+
+.#{$layout-footer}__list,
+.#{$layout-footer}__list-item {
+  padding: rem(16);
+}
+
+
+.#{$layout-footer}__list {
+  margin-left: rem(100);
+}
+
+
+.#{$layout-footer}__content {
+  padding-top: rem(24);
+}
