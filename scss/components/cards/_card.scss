@@ -1,0 +1,44 @@
+/*=============================================================================
+  #CARDS
+ =============================================================================*/
+
+/* 
+* Componente dos cards
+* Estilo dos cards da página 
+*/
+
+$component-cards: "c-cards";
+$component-card: "c-card";
+
+.#{$component-cards}-container__title {
+  @include text-format(0.02em, uppercase);
+  font-weight: map-get($font-weight, "medium");
+  color: map-get($colors, "primary-color");
+  text-align: center;
+  font-size: rem(20);
+
+  &::after {
+    @extend %u-global-border-style;
+    content: "";
+    display: block;
+  }
+}
+
+
+.#{$component-card}__content-title,
+.#{$component-card}__content-text {
+  @include text-format(0.02em, uppercase);
+  font-size: rem(14);
+}
+
+
+.#{$component-card}__content-title {
+  font-weight: map-get($font-weight, "medium");
+  color: map-get($colors, "global-dark-color");
+}
+
+
+.#{$component-card}__content-text {
+  font-weight: map-get($font-weight, "bold");
+  color: map-get($colors, "primary-color");
+}

@@ -1,0 +1,50 @@
+/*=============================================================================
+  #CARDS
+ =============================================================================*/
+
+/* 
+* Layout dos cards
+* Estrutura dos cards da página 
+*/
+
+$layout-cards: "l-cards";
+$layout-card: "l-card";
+
+.#{$layout-cards}-container {
+  padding-top: rem(69);
+  padding-bottom: rem(69);
+}
+
+
+.#{$layout-cards} {
+  padding-top: rem(40);
+  margin-left: rem(50);
+  display: grid;
+  grid-gap: rem(33);
+  grid-template-columns: repeat(auto-fit, minmax(#{300px, 1fr}));
+  justify-content: center;
+  justify-items: center;
+}
+
+
+.#{$layout-card} {
+  display: flex;
+  flex-direction: column;
+  width: rem(350);
+  height: rem(450);
+  padding: rem(16);
+}
+
+
+.#{$layout-card}__image {
+  @include flex(center, center);
+  padding-top: rem(12);
+  overflow: hidden;
+}
+
+
+.#{$layout-card}__content {
+  display: flex;
+  flex-direction: column;
+  padding: rem(16);
+}
