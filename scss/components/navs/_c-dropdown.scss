@@ -29,10 +29,9 @@ $component-name: "c-dropdown";
 
 
 .#{$component-name}__link {
+  @include text-format(0.01em, uppercase);
   color: map-get($colors, "text-color");
   font-weight: map-get($font-weight, "regular");
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
   text-decoration: none;
   font-size: rem(15);
 }

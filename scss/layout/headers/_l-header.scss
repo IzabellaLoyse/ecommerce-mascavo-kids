@@ -25,17 +25,14 @@ $layout-name: "l-header-menu";
 
   &::after,
   &::before {
+    @extend %u-global-border-style;
     content: "";
     display: block;
-    border: 1px solid map-get($colors, "border-color");
-    transform: matrix(1, 0, 0, 1, 0, 0);
-  }
+  } 
 }
 
 
 .#{$layout-name}__navigation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(center, center);
   padding: rem(12);
 }
