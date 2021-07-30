@@ -8,6 +8,7 @@
 */
 
 $layout-name: "button";
+$layout-button: "l-button";
 
 .l-search__#{$layout-name} {
   height: $global-height;
@@ -26,7 +27,12 @@ $layout-name: "button";
 
 
 
-
+/* Botão do Card - Tamanho */
+.#{$layout-button}--small {
+  font-size: rem(10);
+  width: rem(100);
+  height: rem(27);
+}
 
 
 
