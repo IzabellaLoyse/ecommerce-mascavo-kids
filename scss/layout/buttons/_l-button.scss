@@ -30,6 +30,7 @@ $layout-button: "l-button";
 
 /* Botão do Card - Tamanho */
 .#{$layout-button}--small {
+ @include flex(center, center);
   font-size: rem(10);
   width: rem(100);
   height: rem(27);
