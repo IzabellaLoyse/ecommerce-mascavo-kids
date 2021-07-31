@@ -1,0 +1,16 @@
+/*=============================================================================
+  #WRAPPER
+ =============================================================================*/
+
+$layout-name: "l-wrapper";
+
+.#{$layout-name} {
+  @include flex(center, space-between);
+}
+
+
+.#{$layout-name}__buttons {
+  display: flex;
+  padding-left: rem(16);
+  gap: rem(15);
+}
