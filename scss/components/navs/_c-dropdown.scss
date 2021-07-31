@@ -35,6 +35,7 @@ $component-name: "c-dropdown";
   font-weight: map-get($font-weight, "regular");
   text-decoration: none;
   font-size: rem(15);
+  cursor: pointer;
 }
 
 
