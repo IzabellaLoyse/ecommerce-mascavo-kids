@@ -1,0 +1,13 @@
+/*=============================================================================
+  #TITLE
+ =============================================================================*/
+
+ $component-name: "c-title";
+
+.#{$component-name}--blue {
+  color: map-get($colors, "primary-color");
+}
+
+.#{$component-name}--pink {
+  color: map-get($colors, "secondary-color");
+}
