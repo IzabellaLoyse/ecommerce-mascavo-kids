@@ -45,8 +45,8 @@
   @import "layout/cards/l-card";
   @import "layout/footers/l-footer";
   @import "layout/pagination/l-pagination";
-  @import"layout/filter/l-filter";
   @import"layout/product/l-product";
+  @import"layout/wrapper/l-wrapper";
 
 
 
@@ -62,12 +62,15 @@
   @import "components/links/c-link";
   @import "components/borders/c-border";
   @import "components/cards/c-card";
+  @import "components/title/c-title";
   @import "components/footers/c-footer";
-  @import "components/filter/c-filter";
   @import "components/product/c-product";
+  @import "components/wrapper/c-wrapper";
 
 
 
  /*=============================================================================
   #STATE
  =============================================================================*/
+
+ @import "state/state";
