@@ -10,10 +10,16 @@
 $component-name: "c-input";
 
 
-.#{$component-name}-search {
+.#{$component-name}-search,
+.#{$component-name}-size {
   border: 1px solid map-get($colors , "border-color" );
   font-weight: map-get($font-weight, "italic");
   font-style: italic;
   font-size: rem(10);
   text-transform: uppercase;
+}
+
+
+.#{$component-name}-size {
+  font-size: rem(14);
 }
