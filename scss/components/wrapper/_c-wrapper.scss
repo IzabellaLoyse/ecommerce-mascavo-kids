@@ -4,9 +4,14 @@
 
  $component-name: "c-wrapper";
 
-.#{component-name}__products {
+.#{$component-name}__products {
   @include text-format(0.02em, uppercase);
   font-weight: map-get($font-weight, "medium");
   color: map-get($colors, "text-color");
   font-size: rem(14);
+}
+
+
+.#{$component-name}__product {
+  font-weight: map-get($font-weight, "bold");
 }
