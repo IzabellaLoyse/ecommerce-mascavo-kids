@@ -35,15 +35,18 @@ $component-name: "c-button";
 .#{$component-name}--blue {
   background-color: map-get($colors , "button-color");
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: darken(map-get($colors , "button-color"), 15%);
   }
 }
 
+
 .#{$component-name}--pink {
   background-color: map-get($colors , "secondary-button-color");
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: darken(map-get($colors , "secondary-button-color"), 15%);
   }
 }
