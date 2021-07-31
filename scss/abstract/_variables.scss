@@ -12,12 +12,14 @@ $colors: (
   "secondary-color": hsla($secondary-hue, 65%, 48%, 1),
   "secondary-dark-color": hsla($secondary-hue, 73%, 48%, 1),
   "button-color": hsla(207, 90%, 54%, 1),
+  "secondary-button-color": hsl(302, 82%, 67%),
   "main-color": hsl(0, 0%, 100%),
   "base-color": hsl(0, 0%, 96%),
   "global-dark-color": hsl(0, 0%, 0%),
   "placeholder-color": hsl(0, 0%, 33%),
   "border-color": hsla(0, 0%, 47%, 0.4),
   "text-color": hsl(0, 0%, 40%),
+  "box-color":  hsla(0, 9%, 90%, 1),
 );
 
 
