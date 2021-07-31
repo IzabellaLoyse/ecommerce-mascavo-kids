@@ -22,15 +22,27 @@ $component-name: "c-button";
 /* Botão do card */
 .#{$component-name} {
   @include text-format(0.05em, uppercase);
-  background-color: map-get($colors , "button-color");
   font-weight: map-get($font-weight , "bold");
   color: map-get($colors , "main-color");
   border-radius: $global-radius;
   border: none;
   transition: all 300ms ease-in-out;
   cursor: pointer;
+}
+
+
+.#{$component-name}--blue {
+  background-color: map-get($colors , "button-color");
 
   &:hover {
     background-color: darken(map-get($colors , "button-color"), 15%);
+  }
+}
+
+.#{$component-name}--pink {
+  background-color: map-get($colors , "secondary-button-color");
+
+  &:hover {
+    background-color: darken(map-get($colors , "secondary-button-color"), 15%);
   }
 }

@@ -36,10 +36,17 @@ $layout-button: "l-button";
 }
 
 
+.#{$layout-button}--tiny {
+  width: rem(30);
+  height: rem(30);
+}
 
 
-
-
+.#{$layout-button}--big {
+  height: $global-height;
+  width: rem(158);
+  font-size: rem(15);
+}
 
 
 
