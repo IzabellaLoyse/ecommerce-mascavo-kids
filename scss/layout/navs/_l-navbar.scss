@@ -13,7 +13,7 @@ $layout-name: "l-navbar";
 
 
 .#{$layout-name}__menu {
-  @include flex(center, space-evenly);
+  @include flex(center, space-between);
   width: 100%;
   margin-top: rem(30);
   margin-bottom: rem(40);
