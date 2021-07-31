@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Mascavo Kids</title>
+  </head>
+
+  <body>
+    <header class="l-header l-container">
+      <h1>
+        <a href="index.html" class="c-headline">
+          Mascavo <span class="c-headline__name">Kids</span>
+        </a>
+      </h1>
+
+      <nav class="l-navbar" aria-label="Cabeçalho de informações">
+        <section class="l-navbar__menu">
+          <div class="l-navbar__search" role="search">
+            <label for="search" class="sr-only">Campo de pesquisa</label>
+            <input
+              type="text"
+              name="search"
+              placeholder="O que está procurando ?"
+              class="l-search__input c-input-search"
+            />
+
+            <button class="l-search__button c-button-search">
+              <span class="sr-only">Pequisar</span>
+              <img src="/img/icon/search.svg" alt="" class="icon" />
+            </button>
+          </div>
+
+          <a href="#" class="c-link-login l-link-login">Entrar</a>
+
+          <a href="#">
+            <img src="/img/icon/cart.svg" alt="Carrinho de compras" />
+          </a>
+        </section>
+      </nav>
+    </header>
+
+    <header class="l-header-menu l-container">
+      <nav
+        class="l-header-menu__navigation"
+        aria-label="Cabeçalho de navegação"
+      >
+        <ul class="c-dropdown">
+          <li class="c-dropdown__item">
+            <a href="index.html" class="c-dropdown__link c-border">Home</a>
+          </li>
+
+          <li class="c-dropdown__item">
+            <span class="c-dropdown__link c-border--state">Roupas</span>
+
+            <ul class="c-dropdown__submenu">
+              <li class="c-dropdown__submenu-item">
+                <a href="tshirt-page.html" class="c-dropdown__submenu-link">Camisetas</a>
+              </li>
+
+              <li class="c-dropdown__submenu-item">
+                <a href="pants-page.html" class="c-dropdown__submenu-link">Calças</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="l-product l-container">
+        <div class="">
+        <img src="/img/produto2.png" alt="">
+      </div>
+
+      <div class="l-product__wrapper">
+        <article class="l-product-content">
+          <h2 class="c-product-content__title">kyly</h2>
+          <p class="c-product-content__text">Calça Infantil Menino Kyly Amarelo</p>
+          <p class="c-product-content__sold">Vendido e entregue por Mascavo Kids</p>
+        </article>
+
+        <div class="l-product-sold">
+          <h3 class="c-product-sold__price">R$ 29,90</h3>
+          <p class="c-product-sold__credit"><strong>1X</strong> de <strong>R$ 29,90</strong> sem juros no cartão</p>
+        </div>
+
+        <div class="l-product-container">
+        <label for="size" class="c-product-container__label">Tamanho</label>
+        <select name="size" id="size" class="c-input-size">
+          <option value="">Selecione o tamanho...</option>
+          <option value="pp">PP</option>
+          <option value="p">P</option>
+          <option value="m">M</option>
+          <option value="g">G</option>
+
+        </select>
+      </div>
+        <button class="c-button c-button--blue l-button--big">Comprar</button>
+
+      </div>
+      </section>
+      
+
+      
+    </main>
+
+    <footer class="l-footer l-container">
+      <nav class="l-footer__navigation" aria-label="Navegação do rodapé">
+        <ul class="l-footer__list">
+          <li class="l-footer__list-item">
+            <a href="#" class="c-footer__list-link">Quem somos ?</a>
+          </li>
+
+          <li class="l-footer__list-item">
+            <a href="#" class="c-footer__list-link">Política de privacidade</a>
+          </li>
+
+          <li class="l-footer__list-item">
+            <a href="#" class="c-footer__list-link">Saiba mais</a>
+          </li>
+
+          <li class="l-footer__list-item">
+            <a href="#" class="c-footer__list-link">Trabalhe conosco</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="l-footer__content">
+        <p class="c-footer__description">
+          mascavo kids - cnpj: 00.000.000.0000/00 - rua das nuvens,00 - bairro
+          dos sonhos
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

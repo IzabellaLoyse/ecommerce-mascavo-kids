@@ -1,0 +1,40 @@
+/*=============================================================================
+  #PRODUCT
+ =============================================================================*/
+
+/* Estrutura da sessão de produto */
+
+$layout-name: "l-product";
+
+.#{$layout-name} {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+}
+
+
+.#{$layout-name}__wrapper,
+.#{$layout-name}-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.#{$layout-name}__wrapper {
+  flex-wrap: wrap;
+}
+
+
+.#{$layout-name}-sold {
+  padding-left: rem(16);
+  width: auto;
+  height: auto;
+  background-color: map-get($colors, "box-color");
+}
+
+
+.#{$layout-name}-container {
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+}

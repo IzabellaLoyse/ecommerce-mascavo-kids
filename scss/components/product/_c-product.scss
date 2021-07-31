@@ -1,0 +1,46 @@
+/*=============================================================================
+  #PRODUCT
+ =============================================================================*/
+
+/* Estilos da sessão de produto */
+
+$component-name: "c-product";
+
+.#{$component-name}-content__title {
+  font-size: rem(16);
+}
+
+
+.#{$component-name}-content__title,
+.#{$component-name}-sold__price {
+  @include text-format(0.02em, uppercase);
+  font-weight: map-get($font-weight, "bold");
+}
+
+
+.#{$component-name}-content__text {
+  font-size: rem(16);
+  max-width: rem(300);
+}
+
+
+.#{$component-name}-content__text,
+.#{$component-name}-content__sold,
+.#{$component-name}-sold__credit,
+.#{$component-name}-container__label {
+  @include text-format(0.02em, uppercase);
+  font-weight: map-get($font-weight, "medium");
+}
+
+
+.#{$component-name}-content__sold,
+.#{$component-name}-sold__credit,
+.#{$component-name}-container__label {
+  font-size: rem(13);
+}
+
+
+.#{$component-name}-sold__price {
+  font-size: rem(20);
+  color: map-get($colors, "secondary-dark-color");
+}
