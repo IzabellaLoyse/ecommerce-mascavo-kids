@@ -30,9 +30,20 @@ $layout-card: "l-card";
 .#{$layout-card} {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: rem(350);
   height: rem(450);
   padding: rem(16);
+}
+
+
+.#{$layout-card}-promotion {
+  @include flex(center, center);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: rem(22);
+  width: rem(52);
 }
 
 
