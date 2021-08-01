@@ -5,37 +5,11 @@ const buttonSizeG = document.querySelector(".js-btn-size-g");
 const cards = document.querySelectorAll(".js-card");
 
 
-const clothesSizeP = (size) => {
+const clothesSize = (item) => {
   cards.forEach((size) => {
-    const attributeP = size.getAttribute("data-size-p")
+    const attribute = size.getAttribute(`data-size-${item}`)
 
-    if (attributeP !== "p") {
-      size.classList.add("is-disabled")
-    } else {
-      size.classList.remove("is-disabled")
-    }
-  })
-}
-
-
-const clothesSizeM = (size) => {
-  cards.forEach((size) => {
-    const attributeM = size.getAttribute("data-size-m")
-
-    if (attributeM !== "m") {
-      size.classList.add("is-disabled")
-    } else {
-      size.classList.remove("is-disabled")
-    }
-  })
-}
-
-
-const clothesSizeG = (size) => {
-  cards.forEach((size) => {
-    const attributeG = size.getAttribute("data-size-g")
-
-    if (attributeG !== "g") {
+    if (attribute !== item) {
       size.classList.add("is-disabled")
     } else {
       size.classList.remove("is-disabled")
@@ -45,8 +19,17 @@ const clothesSizeG = (size) => {
 
 
 
-buttonSizeP.addEventListener("click", clothesSizeP);
 
-buttonSizeM.addEventListener("click", clothesSizeM);
 
-buttonSizeG.addEventListener("click", clothesSizeG);
+buttonSizeP.addEventListener("click", () => {
+  clothesSize('p')
+});
+
+buttonSizeM.addEventListener("click", () => {
+  clothesSize('m')
+});
+
+
+buttonSizeG.addEventListener("click", () => {
+  clothesSize('g')
+});
