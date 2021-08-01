@@ -14,6 +14,11 @@ $layout-name: "l-product";
 }
 
 
+.#{$layout-name}__image {
+  @include flex(center, center);
+}
+
+
 .#{$layout-name}__wrapper,
 .#{$layout-name}-container {
   display: flex;
