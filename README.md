@@ -1,6 +1,6 @@
 #  Mascavo Kids  🛒
  
-A melhor loja de vestuário infantil
+## A melhor loja de vestuário infantil
 
 
 # Funcionalidades 📌
@@ -17,6 +17,13 @@ A melhor loja de vestuário infantil
 - CSS3
 - SCSS
 - JavaScript
+
+
+# Metodologia 📝
+
+- BEM
+- Namespaces CSS
+- SMACSS
 
 
 # Demo 🕹️
