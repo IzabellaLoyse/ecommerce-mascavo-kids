@@ -6,7 +6,15 @@
 
   $component-name: "c-headline";
 
- .#{$component-name} {
+  .#{$component-name} {
+
+   @include breakpoint(1250) {
+   text-align: center;
+  }
+  }
+
+
+ .#{$component-name}__title {
    color: map-get($colors ,"primary-dark-color" );
    font-size: rem(32);
    letter-spacing: 0.08em;

@@ -46,6 +46,10 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: $global-font-size;
   line-height: $global-line-height;
+
+  @include breakpoint(large-only) {
+    font-size: 87.5%;
+  }
 }
 
 

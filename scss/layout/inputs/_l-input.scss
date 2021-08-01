@@ -14,4 +14,8 @@ $layout-name: "input";
   width: rem(506);
   height: $global-height;
   padding: rem(15);
+
+  @include breakpoint(1250) {
+    width: rem(325);
+   }
 }

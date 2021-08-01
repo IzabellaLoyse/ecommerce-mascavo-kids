@@ -24,6 +24,10 @@ $layout-card: "l-card";
   grid-template-columns: repeat(auto-fit, minmax(#{300px, 1fr}));
   justify-content: center;
   justify-items: center;
+
+  @include breakpoint(758) {
+    margin-left: 0;
+  }
 }
 
 
@@ -58,4 +62,8 @@ $layout-card: "l-card";
   display: flex;
   flex-direction: column;
   padding: rem(16);
+
+  @include breakpoint(700) {
+    align-items: center;
+  }
 }

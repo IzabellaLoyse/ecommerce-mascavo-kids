@@ -6,6 +6,10 @@
   width: 100%;
   display: flex;
   margin-top: rem(43);
+
+  @include breakpoint(1250) {
+    flex-direction: column;
+  }
 }
 
 

@@ -32,10 +32,13 @@ $layout-footer: "l-footer";
 
 
 .#{$layout-footer}__list {
-  margin-left: rem(100);
+  @include flex(center, center);
+  flex-direction: column;
 }
 
 
 .#{$layout-footer}__content {
   padding-top: rem(24);
 }
+
+

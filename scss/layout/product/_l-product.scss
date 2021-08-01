@@ -11,6 +11,11 @@ $layout-name: "l-product";
   justify-content: space-evenly;
   padding-top: rem(40);
   padding-bottom: rem(40);
+
+  @include breakpoint(758) {
+    flex-direction: column;
+    align-items: center;
+   }
 }
 
 
@@ -31,6 +36,13 @@ $layout-name: "l-product";
 }
 
 
+.#{$layout-name}content {
+  @include breakpoint(758) {
+    padding-top: rem(32);
+   }
+}
+
+
 .#{$layout-name}-sold {
   padding-left: rem(16);
   width: auto;
@@ -43,3 +55,4 @@ $layout-name: "l-product";
   padding-top: rem(16);
   padding-bottom: rem(16);
 }
+

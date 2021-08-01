@@ -7,8 +7,13 @@
 $layout-name: "l-navbar";
 
 .#{$layout-name} {
-  width: 72%;
+  width: 70%;
   margin-left: rem(82);
+
+  @include breakpoint(1250) {
+    @include flex(center, center);
+    margin: 0 auto;
+  }
 }
 
 
@@ -17,10 +22,28 @@ $layout-name: "l-navbar";
   width: 100%;
   margin-top: rem(30);
   margin-bottom: rem(40);
+
+  @include breakpoint(1250) {
+   flex-direction: column;
+  }
 }
 
 
 .#{$layout-name}__search {
-  margin-left: rem(18);
   position: relative;
 }
+
+
+.#{$layout-name}__menu-items {
+  @include flex(center, space-between);
+  width: 100%;
+
+  @include breakpoint(1250) {
+    @include flex(center, center);
+    width: 100%;
+    gap: rem(33);
+    padding-top: 2rem;
+   }
+}
+
+  

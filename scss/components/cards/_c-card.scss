@@ -47,6 +47,10 @@ $component-card: "c-card";
 .#{$component-card}__content-title {
   font-weight: map-get($font-weight, "medium");
   color: map-get($colors, "global-dark-color");
+
+  @include breakpoint(700) {
+    text-align: center;
+  }
 }
 
 

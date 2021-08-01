@@ -11,6 +11,10 @@
 $layout-name: "l-link";
 
 .#{$layout-name}-login {
-  margin-left: rem(24);
+  padding-left: rem(80);
+
+  @include breakpoint(1250) { 
+    padding-left: 0;
+  }
 }
 

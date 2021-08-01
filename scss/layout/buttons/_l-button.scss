@@ -16,19 +16,29 @@ $layout-button: "l-button";
   position: absolute;
   left: 90%;
   top: 0;
+
+  @include breakpoint(1250) {
+    width: rem(50);
+    left: 85%;
+   }
 }
 
 
 .l-search__#{$layout-name} .icon {
   height: rem(20);
   width: rem(20);
+
+  @include breakpoint(1250) {
+    width: rem(18);
+    height: rem(18);
+   }
 }
 
 
 
 
 
-/* Botão do Card - Tamanho */
+/* Tamanho */
 .#{$layout-button}--small {
  @include flex(center, center);
   font-size: rem(10);
