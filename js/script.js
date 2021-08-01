@@ -4,32 +4,40 @@ const buttonSizeG = document.querySelector(".js-btn-size-g");
 
 const cards = document.querySelectorAll(".js-card");
 
+let sizeFilter = [];
 
-const clothesSize = (item) => {
+const addClothesSize = (item) => {
+  sizeFilter.push(item)
+
   cards.forEach((size) => {
-    const attribute = size.getAttribute(`data-size-${item}`)
+    const attribute = size.getAttribute(`data-size-${item}`);
 
-    if (attribute !== item) {
+    if (!sizeFilter.includes(attribute)) {
       size.classList.add("is-disabled")
-    } else {
-      size.classList.remove("is-disabled")
     }
   })
 }
 
 
-
-
-
 buttonSizeP.addEventListener("click", () => {
-  clothesSize('p')
+  if (buttonSizeP) {
+    addClothesSize("p")
+    buttonSizeP.classList.toggle("is-active")
+  }
 });
 
+
 buttonSizeM.addEventListener("click", () => {
-  clothesSize('m')
+  if (buttonSizeM) {
+    addClothesSize("m")
+    buttonSizeM.classList.toggle("is-active")
+  }
 });
 
 
 buttonSizeG.addEventListener("click", () => {
-  clothesSize('g')
+  if (buttonSizeG) {
+    addClothesSize("g")
+    buttonSizeG.classList.toggle("is-active")
+  }
 });

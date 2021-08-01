@@ -5,3 +5,8 @@
  .is-disabled {
    display: none;
  }
+
+
+ .is-active {
+  background-color: darken(map-get($colors , "secondary-button-color"), 22%);
+ }
